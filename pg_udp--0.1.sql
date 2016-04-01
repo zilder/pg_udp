@@ -1,0 +1,2 @@
+CREATE OR REPLACE FUNCTION udp_send(host CSTRING, port INT, data CSTRING)
+RETURNS VOID AS 'pg_udp', 'udp_send' LANGUAGE C STRICT;
